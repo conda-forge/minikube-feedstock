@@ -1,5 +1,5 @@
 {% set name = "minikube" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/kubernetes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 42b252320cc8f10d801fd7b809340bdf036002eb6f095186927221a501ac5c63
+  sha256: ae68e7ea30a9820be69ceb6428adb49ffc52ddb829cfc445dd906ba9169b6bad
 
 build:
   number: 0
