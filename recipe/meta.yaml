@@ -10,13 +10,13 @@ source:
   sha256: 93a1060a6f73fcd3a568880405569932a07b0e781dae34c006bc0259b082bc5d
 
 build:
-  number: 0
-  skip: true  # [win]
+  number: 1
 
 requirements:
   build:
     - {{ compiler("go") }}
     - make
+    - posix  # [win]
   run:
     - kubernetes
 
@@ -32,7 +32,7 @@ about:
   summary: 'Run Kubernetes locally'
   description: |
     minikube implements a local Kubernetes cluster.
-    minikube's primary goals are to be the best tool for local Kubernetes 
+    minikube's primary goals are to be the best tool for local Kubernetes
     application development and to support all Kubernetes features that fit.
   doc_url: https://minikube.sigs.k8s.io/docs/
   dev_url: https://github.com/kubernetes/minikube
