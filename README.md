@@ -5,9 +5,13 @@ Home: http://github.com/kubernetes/minikube
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/minikube-feedstock/blob/master/LICENSE.txt)
 
 Summary: Run Kubernetes locally
+
+Development: https://github.com/kubernetes/minikube
+
+Documentation: https://minikube.sigs.k8s.io/docs/
 
 minikube implements a local Kubernetes cluster.
 minikube's primary goals are to be the best tool for local Kubernetes
