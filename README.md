@@ -1,11 +1,11 @@
-About minikube
-==============
+About minikube-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/minikube-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/kubernetes/minikube
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/minikube-feedstock/blob/main/LICENSE.txt)
 
 Summary: Run Kubernetes locally
 
