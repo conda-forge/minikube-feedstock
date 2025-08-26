@@ -1,9 +1,6 @@
 #!/bin/env bash
 
-set -ex
-
-export GOPATH="${BUILD_PREFIX}/bin"
-export GOROOT="${BUILD_PREFIX}/go"
+set -exou pipefail
 
 make
 
