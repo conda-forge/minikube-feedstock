@@ -15,7 +15,7 @@ build:
 
 requirements:
   build:
-    - ${{ compiler('go') }}
+    - ${{ compiler('go-nocgo') }}
     - make
     - if: win
       then: posix
