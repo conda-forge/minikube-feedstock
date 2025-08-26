@@ -10,3 +10,5 @@ make
 mkdir -p $PREFIX/bin
 
 mv out/minikube $PREFIX/bin
+
+go-licenses save . --save_path="./license-files/"

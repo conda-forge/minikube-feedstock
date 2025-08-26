@@ -16,6 +16,7 @@ build:
 requirements:
   build:
     - ${{ compiler('go-nocgo') }}
+    - go-licenses
     - make
     - if: win
       then: posix
@@ -29,7 +30,9 @@ tests:
 about:
   homepage: http://github.com/kubernetes/minikube
   license: Apache-2.0
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - license-files/
   summary: Run Kubernetes locally
   description: |
     minikube implements a local Kubernetes cluster.
