@@ -11,4 +11,4 @@ mkdir -p $PREFIX/bin
 
 mv out/minikube $PREFIX/bin
 
-go-licenses save . --save_path="./license-files/"
+go-licenses save $SRC_DIR --save_path="./license-files/"

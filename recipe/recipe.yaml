@@ -20,6 +20,7 @@ requirements:
     - make
     - if: win
       then: posix
+    - git
   run:
     - kubernetes
 
