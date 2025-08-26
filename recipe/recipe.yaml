@@ -19,8 +19,9 @@ requirements:
     - go-licenses
     - make
     - if: win
-      then: posix
-    - git
+      then:
+        - git
+        - posix
   run:
     - kubernetes
 
