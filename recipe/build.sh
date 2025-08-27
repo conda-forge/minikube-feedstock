@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-set -exou pipefail
+set -euxo pipefail
 
 make
 
