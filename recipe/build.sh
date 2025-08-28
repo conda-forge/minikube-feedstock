@@ -1,12 +1,11 @@
 #!/bin/env bash
 
-set -ex
-
-export GOPATH="${BUILD_PREFIX}/bin"
-export GOROOT="${BUILD_PREFIX}/go"
+set -euxo pipefail
 
 make
 
 mkdir -p $PREFIX/bin
 
 mv out/minikube $PREFIX/bin
+
+go-licenses save $SRC_DIR/cmd/minikube --save_path="./license-files/"
