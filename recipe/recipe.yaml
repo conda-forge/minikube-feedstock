@@ -1,6 +1,6 @@
 context:
   name: minikube
-  version: "1.36.0"
+  version: "1.37.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/kubernetes/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: d78302d4ad1745341f5c26f49b1cfb42a3e78b486c371c279ae6820a73cd4c26
+    sha256: 4e85cc93888d943fc9f98d62e99f60e754e98c3b18e29a33b75d0b65591e5dfa
 
 build:
   number: 0
