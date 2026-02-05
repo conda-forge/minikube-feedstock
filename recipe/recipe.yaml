@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/kubernetes/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: 59541ad266f462c212f54da92a36664881e569603961a6d4d5bb4a0c916975bc
+    sha256: 0938a1839bd5c5cb78eac2ff7da931dbbc062d83437351906e4d8d2b53b398c6
 
 build:
   number: 0
