@@ -12,9 +12,6 @@ source:
 
 build:
   number: 0
-  script:
-    env:
-      CGO_ENABLED: "0"
 
 requirements:
   build:
