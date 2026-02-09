@@ -19,6 +19,7 @@ requirements:
       then:
         - ${{ compiler('go-cgo') }}
         - ${{ compiler('c') }}
+        - ${{ stdlib('c') }}
       else:
         - ${{ compiler('go-nocgo') }}
     - go-licenses
