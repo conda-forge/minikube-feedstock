@@ -1,6 +1,6 @@
 context:
   name: minikube
-  version: "1.37.0"
+  version: "1.38.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,14 +8,20 @@ package:
 
 source:
   - url: https://github.com/kubernetes/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: 4e85cc93888d943fc9f98d62e99f60e754e98c3b18e29a33b75d0b65591e5dfa
+    sha256: 0938a1839bd5c5cb78eac2ff7da931dbbc062d83437351906e4d8d2b53b398c6
 
 build:
   number: 0
 
 requirements:
   build:
-    - ${{ compiler('go-nocgo') }}
+    - if: linux and x86_64
+      then:
+        - ${{ compiler('go-cgo') }}
+        - ${{ compiler('c') }}
+        - ${{ stdlib('c') }}
+      else:
+        - ${{ compiler('go-nocgo') }}
     - go-licenses
     - make
     - if: win
